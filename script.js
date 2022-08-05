@@ -5,3 +5,4 @@ for (let i = 0; i < 256; i++) {
     grid.classList = 'grid';
     container.appendChild(grid);
 }
+
