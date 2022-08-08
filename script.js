@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const userPrompt = document.querySelector('.user-prompt');
+const randomColorBtn = document.querySelector('.random-color');
 
 // Create Grids
 function createGrids(size) {
@@ -14,12 +15,12 @@ function createGrids(size) {
     changeColor();
 }
 
-// Change grid background color when hovered
+// Change square background color when hovered
 function changeColor() {
     const grid = document.querySelectorAll('.squareGrid');
     grid.forEach(square => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'blue';
+            square.style.backgroundColor = 'aqua';
         });
     });
 }
@@ -44,5 +45,20 @@ userPrompt.addEventListener('click', () => {
         createGrids(Warn); 
     };
 })
+
+function randomColor() {
+    const grid = document.querySelectorAll('.squareGrid');
+    grid.forEach(square => {
+        square.addEventListener('mouseover', () => {
+            const randomR = Math.floor(Math.random() * 256);
+            const randomG = Math.floor(Math.random() * 256);
+            const randomB = Math.floor(Math.random() * 256);
+            const rgbColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+            square.style.backgroundColor = rgbColor;
+        });
+    });
+}
+
+randomColorBtn.addEventListener('click', randomColor);
 
 createGrids(16);
