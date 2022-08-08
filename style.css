@@ -16,7 +16,8 @@ h1 {
     gap: 10px;
 }
 
-.user-prompt {
+.user-prompt,
+.random-color {
     padding: 5px 15px;
     border-radius: 10px;
     background-color: aqua;
@@ -41,4 +42,9 @@ h1 {
     outline: 0.05em;
     outline-style: solid;
     outline-color: rgb(201, 196, 196);
+}
+
+.user-prompt:hover,
+.random-color:hover {
+    background-color: rgb(3, 216, 216);
 }
