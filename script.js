@@ -33,4 +33,4 @@ userPrompt.addEventListener('click', () => {
     createGrids(userNumber);
 })
 
-createGrids(2);
+createGrids(16);
