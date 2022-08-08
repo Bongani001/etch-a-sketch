@@ -46,6 +46,7 @@ userPrompt.addEventListener('click', () => {
     };
 })
 
+// Make a random color
 function randomColor() {
     const grid = document.querySelectorAll('.squareGrid');
     grid.forEach(square => {
