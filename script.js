@@ -24,6 +24,7 @@ function changeColor() {
     });
 }
 
+// Ask user for number of squares per side
 userPrompt.addEventListener('click', () => {
     let userNumber = prompt('How many number of squares per side would you like? (limit = 100 squares)');
     const grid = document.querySelectorAll('.squareGrid');
